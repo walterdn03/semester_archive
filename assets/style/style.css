@@ -1,0 +1,1238 @@
+
+
+
+
+/*FONT*/
+@font-face {
+  font-family: 'KFZuka';
+  src: url('../font/KFZuka-Ultra.otf') format('opentype')
+  font-weight: 900; /* peso per Black */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'KFZuka';
+  src: url('../font/KFZuka-Bold.otf') format('opentype');
+  font-weight: bold; /* peso per Bold */
+  font-style: normal;
+}
+
+:root {
+--color-primary: #FF7700; /* Colore primario */
+}
+
+.btn-success:active:focus {
+  color: #ffffff; 
+  background-color: #161617 !important; 
+  border-color: #494F57;
+}
+
+body {
+  font-family: "KF Zuka";
+  font-style: normal;
+}
+
+
+h1 {
+color: black !important;
+text-align: center;
+font-family: "KF Zuka";
+font-size: 5rem !important;
+font-style: normal;
+font-weight: 700 !important;
+line-height: 122.945%; /* 6.91563rem */
+letter-spacing: -0.28125rem;
+}
+
+/*aggiungere primari e secondari*/
+
+.navbar-toggler {
+padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
+font-size: var(--bs-navbar-toggler-font-size);
+height: 10px !important;
+color: #000 !important;
+background-color: transparent;
+border: 0 !important;
+border-radius: var(--bs-navbar-toggler-border-radius);
+transition: var(--bs-navbar-toggler-transition);
+}
+
+
+.navbar-inner {
+background:transparent !important;
+}
+
+.navbar {
+display: flex;
+justify-content: center;
+align-items: center;
+color: #000 !important;
+}
+
+.navbar .container-fluid {
+padding-left: 1rem; /* Spazio uniforme */
+padding-right: 1rem;
+}
+
+.navbar a {
+background-color: none !important;
+color: #000 !important;
+font-family: "KF Zuka";
+font-size: 1.875rem !important;
+font-weight: 700;
+letter-spacing: -0.09375rem;
+margin: 0;
+text-decoration: none !important;
+/* padding: 0 0.5rem; */ /* Aggiungi uno spazio bilanciato */
+}
+
+.navbar a:first-child {
+margin-left: 20px;}
+
+.navbar a:last-child {
+  margin-right: 20px;
+}
+
+.navbar a:hover {
+color: var(--color-primary) !important;
+}
+
+
+
+.canvas-landing {
+  width: 100vw;
+  /*height: 100vw;*/
+}
+
+.canvas-landing img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+
+.testPosition {
+  position: absolute;
+  color: white;
+  font-family: 'KFZuka', sans-serif;
+  font-weight: 900;
+}
+
+.left {
+  top: 0;
+}
+
+.right {
+  bottom: 0;
+  right: 0;
+  color: black;
+}
+
+.bg-dark {
+  background-color: red !important;
+}
+
+.container-canvas {
+  height: 30%;
+}
+
+.container-canvas h1 {
+  color: white;
+  font-family: 'KFZuka', sans-serif;
+  font-weight: 900;
+  font-size: 90px;
+}
+
+
+.container-canvas p {
+  color: white;
+  font-family: 'KFZuka', sans-serif;
+  font-size: 18px;
+}
+
+#orange {}
+
+.fit-image {
+  object-fit: cover;
+  width: 100%;
+}
+
+.navbar-space {
+  margin-left: 20px !important;
+}
+  .semester-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 10; /* Mette il contenuto sopra il resto */
+      color: #FF7700;
+    }
+
+    .semester-overlay h1 {
+      color: var(--color-primary) !important;
+      font-size: 9rem !important;
+      font-weight: bold;
+    }
+
+  
+    .square {
+      position: absolute;
+      width: 288px;
+      height: 256px;
+      background-color: #FF7700;
+    }
+
+    .square-top {
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%) rotate(-90deg);
+    }
+
+    .square-bottom {
+      bottom: 16px;
+      left: 50%;
+      transform: translateX(-50%) rotate(-90deg);
+    }
+
+    .square-left {
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .square-right {
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+
+    .article-container {
+      padding: 20px; 
+    }
+
+    .article-bg img {
+      width: 100%;
+    }
+
+    .article-bg h1 {
+      color: var(--color-primary) !important;
+      font-size: 90px !important;
+      text-align: center;
+      font-family: KF Zuka;
+      font-size: 90px;
+      font-weight: 700;
+      letter-spacing: -0.05em;
+    }
+
+
+    .article-intro-container {
+      max-width: 65%;
+      margin: 0 auto;
+    }
+
+    .article-evidence-container {
+      max-width: 85%;
+      margin: 0 auto;
+    }
+
+
+    .article-evidence {
+      margin: 0 auto;
+      color: #000;
+      font-family: "KF Zuka";
+      font-size: 2.4375rem;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 2.4375rem; /* 100% */
+      letter-spacing: -0.07313rem;
+      padding-top: 48px;
+      padding-bottom: 48px; /*MULTIPLE 8*/
+    }
+
+    .article-container-text {
+      margin: 0 auto;
+      max-width: 50%;
+      color: #161616;
+      font-family: "KF Zuka";
+      font-size: 1.125rem;
+      font-weight: 500;
+      line-height: normal;
+      letter-spacing: -0.01125rem;
+    }
+
+
+    .container-question {
+      margin-left: 15%;
+      max-width: 60%;
+    }
+    .container-question h3 {
+      color: #161616;
+      font-family: "KF Zuka";
+      font-size: 1.5rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 1.5625rem; /* 104.167% */
+    }
+
+    .relatedcontent h2 {
+      color: #000;
+      font-family: "KF Zuka";
+      font-size: 3rem;
+      font-style: normal;
+      font-weight: 1000;
+      line-height: normal;
+    }
+
+    .relatedcontent {
+      text-align: center;
+      color: #FFF;
+      text-align: center;
+      font-family: "KF Zuka";
+      font-size: 1.5rem;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 150%; /* 2.25rem */
+    }
+  
+  .navigation {
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 1000;
+  }
+
+  .navigation a {
+    color: #000;
+    text-decoration: none;
+  }
+
+  .navigation a:hover {
+    color: #FF7700;
+  }
+
+  #footer {
+    padding: 20px;
+    background-color: black;
+    color: #070300;
+    font-family: "KF Zuka";
+    font-size: 1.875rem;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: -0.09375rem;
+    text-decoration: none;
+  }
+
+
+  #footer a {
+    color: white;
+    text-decoration: none;
+  }
+
+
+
+
+.card {
+ border-radius: 0 !important;
+ border-width: 0 !important;
+}
+
+.card-overlay {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(0, 0, 0, 0.7); 
+opacity: 0;
+transition: opacity 0.3s ease; 
+border-radius: 0 !important;
+}
+
+.card:hover .card-overlay {
+border-radius: 0 !important;
+opacity: 1;
+}
+
+.card-overlay p {
+margin: 0;
+font-size: 1.2rem;
+}
+
+.card-overlay small {
+margin-top: 0.5rem;
+font-size: 0.9rem;
+}
+
+#galleria .col {
+padding: 2px;
+}
+
+#galleria img {
+object-fit: cover;
+width: 100%;
+height: 100%;
+aspect-ratio: 1 / 1;
+}
+
+.row.g-2 {
+gap: 10px;
+}
+
+.image-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+gap: 10px;
+}
+
+.image-grid img {
+width: 100%;
+height: 200px;
+object-fit: cover;
+display: block;
+background-color: #ccc;
+}
+
+.toggle {
+border: 3px solid #000;
+max-width: 200px !important;
+background-color: white;
+padding-left: 10px !important;
+}
+
+.zoom {
+background-color: black;
+color: black !important;
+text-align: center;
+font-family: "KF Zuka";
+font-size: 30px !important;
+font-weight: 900 !important;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
+#zoom-in, #zoom-out {
+color: white !important;
+border: 0;
+width: 40px;
+height: 40px;
+margin: 5px 15px;
+border: 2px solid white;
+background-color: #000;
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 0;
+}
+
+#zoom p {
+margin: 0;
+padding: 0;
+line-height: 1;
+}
+
+button#zoom-in, button#zoom-out {
+color: white;
+border: 0;
+width: 40px;
+height: 40px;
+margin: 5px 15px; /* Distanza tra i pulsanti */
+border: 2px solid white;
+background-color: #000;
+display: flex; /* Usa Flexbox */
+align-items: center; /* Centra verticalmente il contenuto del pulsante */
+justify-content: center; /* Centra orizzontalmente il contenuto del pulsante */
+padding: 0; /* Rimuove il padding */
+}
+
+button#zoom-in p, button#zoom-out p {
+margin: 0; /* Rimuove il margine predefinito del <p> */
+font-size: 30px; /* Imposta la dimensione del testo */
+}
+
+.row .zoom .col {
+padding: 0;
+}
+
+.row .zoom {
+gap: 5px;
+}
+
+.filter {
+background-color: white;
+border: 3px solid #000;
+max-width: 60px !important;
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 0;
+}
+
+.filter img {
+display: block;
+margin: 0;
+width: 28px;
+}
+
+.toolbar {
+    height: 90px;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 1000;
+  margin-left: 2.5px !important;
+  padding: 10px 0;
+  transition: opacity 0.3s ease, transform 0.3s ease; 
+}
+
+.toolbar.hidden {
+  opacity: 0; 
+  transform: translateY(-10px); 
+  pointer-events: none; 
+}
+
+.custom-toolbar {
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: #fff;
+padding: 10px 30px;
+position: relative;
+font-size: 16px !important;
+}
+
+.nav {
+list-style-type: none;
+display: flex;
+padding: 0;
+margin: 0;
+}
+
+.nav li {
+margin-right: 20px;
+}
+
+.nav a {
+text-decoration: none;
+font-weight: bold;
+color: #000;
+font-size: 16px;
+}
+
+.nav a:hover {
+color: var(--color-primary);
+}
+
+.nav a.active {
+color: orange;
+}
+
+.dropdown-container {
+  position: absolute;
+  right: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+}
+
+.dropdown-container a {
+  color: #000;
+  text-decoration: none;
+}
+
+.nav .dropdown-toggle {
+cursor: pointer;
+color: #000;
+font-weight: bold;
+}
+
+.nav .dropdown-menu {
+position: absolute;
+background-color: #fff;
+border: 1px solid #000;
+display: none;
+margin-top: 5px;
+padding: 10px 0;
+min-width: 150px;
+}
+
+.nav .dropdown:hover .dropdown-menu {
+display: block;
+}
+
+.nav .dropdown-menu li a {
+padding: 10px 20px;
+font-size: 14px;
+color: #000;
+text-decoration: none;
+}
+
+.nav .dropdown-menu li a:hover {
+background-color: #f1f1f1;
+}
+
+.caret {
+margin-left: 5px;
+}
+
+#content {
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+gap: 10px;
+transition: all 0.3s ease;
+}
+
+#content img {
+width: 100%;
+height: auto;
+transition: transform 0.3s ease;
+}
+
+.form-switch .form-check-input {
+
+}
+
+
+.article-bg {
+position: relative; /* Posiziona gli elementi figli rispetto a questo contenitore */
+width: 100%;
+height: auto; /* Puoi specificare una altezza fissa se necessario */
+}
+
+.article-bg img {
+width: 100%; /* L'immagine riempie il contenitore */
+height: auto;
+display: block; /* Rimuove eventuali spazi sotto l'immagine */
+}
+
+.article-bg h1 {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%); /* Centra orizzontalmente e verticalmente */
+color: white; /* Cambia colore per contrastare lo sfondo */
+font-size: 2rem; /* Adatta le dimensioni */
+text-align: center;
+z-index: 1; /* Assicurati che il testo sia sopra l'immagine */
+line-height: 1;
+}
+
+
+.form-switch .form-check-input {
+--bs-form-switch-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba%280, 0, 0, 0.25%29'/%3e%3c/svg%3e");
+width: 4em !important;
+margin-left: -2.5em
+background-image: var(--bs-form-switch-bg);
+background-position: left center;
+border-radius: 0 !important;
+transition: background-position .15s ease-in-out;
+height: 37px !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Navbar generale */
+.navbar {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 10px 20px;
+color: white;
+position: fixed !important; /* Fissa la navbar in cima */
+top: 0;
+left: 0;
+width: 100%; /* Occupa tutta la larghezza della finestra */
+z-index: 1000; /* Assicurati che la navbar sia sopra gli altri contenuti */
+}
+
+.navbar-links {
+display: flex;
+gap: 20px;
+}
+
+.navbar-link {
+text-decoration: none;
+color: white;
+font-size: 16px;
+}
+
+.navbar-logo {
+position: absolute;
+left: 50%;
+transform: translateX(-50%);
+text-align: center;
+
+}
+
+.active {
+  color: #FF7700 !important;
+
+}
+.hamburger-menu {
+display: none;
+font-size: 30px;
+cursor: pointer;
+}
+
+.mobile-menu {
+  font-size: 16px !important;
+  font-family: "KF Zuka";
+  font-weight: bold;
+display: none;
+position: absolute;
+top: 50px;
+left: 0;
+width: 100%;
+background-color: white;
+text-align: center;
+padding: 10px 0;
+border-top: 1px solid #000; /* Bordo superiore */
+  border-bottom: 1px solid #000; /* Bordo inferiore */
+}
+
+.mobile-menu a {
+display: block;
+padding: 10px;
+color: black;
+text-decoration: none;
+font-size: 18px;
+}
+
+.mobile-menu:hover {
+  color: var(--color-primary) !important;
+}
+/* Responsività */
+@media (max-width: 768px) {
+.navbar-links {
+  display: none;
+}
+
+
+.square-bottom {
+  bottom: 0;
+}
+
+.navbar {
+  background-color: ;
+}
+.navbar-logo {
+  margin-left: 4px;
+}
+.special-mob {
+  letter-spacing: -0.20rem;
+}
+
+
+.hamburger-menu {
+  display: block;
+  margin-left: 6px;
+  margin-bottom: 7px;
+}
+
+.mobile-menu.open {
+  display: block;
+  z-index: 100 !important;
+  position: fixed;
+  margin-top: 18px;
+
+}
+
+.special{
+  bottom: 0 !important;
+  top: 20% !important;
+  width: var(--bs-offcanvas-width);
+  border-right: var(--bs-offcanvas-border-width) solid var(--bs-offcanvas-border-color);
+  transform: translateX(-100%);
+  border-top: 1px solid #000;
+  width: 100% !important;
+}
+
+.bkcolor {
+  background-color: #FF7700 !important;
+}
+
+.bkcolor h1 {
+  line-height: 1;
+  font-size: 3.5rem !important;
+  text-decoration: none !important;
+}
+
+.bkcolor a {
+  color: #000 !important;
+  text-decoration: none;
+}
+
+.bkcolor a:hover {
+  text-decoration: underline;
+  transition: 2s all;
+}
+.btn-close {
+  opacity: 1 !important;
+}
+}
+
+
+/* Aggiungi margine superiore al contenuto per evitare che venga coperto dalla navbar fissa */
+body {
+margin-top: 60px; /* Regola in base all'altezza della navbar */
+}
+
+
+
+/* On screens that are 600px wide or less, the background color is olive */
+/* On screens that are 600px wide or less, the background color is olive */
+@media screen and (max-width: 600px) {
+body {
+}
+
+.toolbar {
+  
+}
+
+.navbar a {
+  font-size: 1.5rem !important;
+}
+
+h1 {
+  font-size: 3rem !important;
+}
+
+.container-canvas h1 {
+  font-size: 50px;
+}
+
+.container-canvas p {
+  font-size: 14px;
+}
+
+.article-container-text {
+  max-width: 100%;
+  font-size: 1rem;
+}
+
+.article-evidence {
+  font-size: 1.875rem;
+}
+
+
+
+.nav li {
+  margin-right: 10px;
+}
+
+.nav a {
+  font-size: 14px;
+}
+
+.nav .dropdown-menu {
+  min-width: 120px;
+}
+
+#content {
+  grid-template-columns: 1fr;
+}
+
+#content img {
+  width: 100%;
+  height: auto;
+}
+
+.article-bg img {
+  width: 100%;
+  height: 70vh;
+  object-fit: cover;
+}
+
+.article-bg h1 {
+  font-size: 4em !important;
+  left: 0;
+  transform: translate(0%, -50%);
+}
+
+.article-container {
+  padding: 10px;
+}
+
+.article-intro-container {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.margin-top-mb {
+  margin-top: 10px !important;
+}
+
+.article-evidence-container {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.container-question {
+  margin-left: 0%;
+  max-width: 100%;
+}
+
+.custom-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  line-height: 1;
+}
+
+.custom-toolbar .nav {
+  display: flex;
+  justify-content: center; /* Centra gli elementi orizzontalmente */
+  flex-wrap: wrap;
+  gap: 10px; /* Spaziatura tra gli elementi */
+  width: 100%; /* Assicura che occupi tutta la larghezza */
+  text-align: center;
+  list-style: none; /* Rimuove i puntini della lista */
+  padding: 0;
+  margin: 0;
+}
+
+.custom-toolbar .nav li {
+  display: inline-block; /* Mostra ogni elemento su una riga orizzontale */
+}
+
+.custom-toolbar .nav a {
+  text-decoration: none; /* Rimuove la sottolineatura */
+  color: black; /* Colore del testo */
+  font-size: 1rem; /* Dimensione del font */
+}
+
+.custom-toolbar .dropdown-container {
+  margin-top: 10px; /* Aggiungi margine per separarlo visivamente nella versione responsive */
+  display: n;
+}
+
+  .custom-toolbar {
+    flex-direction: column; /* Dispone gli elementi uno sopra l'altro */
+    align-items: center; /* Centra gli elementi */
+  }
+
+  .custom-toolbar .dropdown-container {
+    width: 100%; /* Occupa tutta la larghezza */
+    text-align: center; /* Centra il testo */
+    display: none;
+  }
+
+  .canvas-landing {
+    height: 100vh; /* Il contenitore occupa tutta l'altezza dello schermo */
+    display: flex;
+    flex-direction: column; /* Dispone le immagini una sopra l'altra */
+}
+
+.canvas-landing img {
+    height: 50vh; /* Ogni immagine occupa la metà dell'altezza dello schermo */
+    width: 100%; /* Si adatta alla larghezza disponibile */
+    object-fit: cover; /* Adatta l'immagine senza deformazioni */
+}
+
+.canvas-landing .row {
+    flex: 1; /* Assicura che le immagini riempiano lo spazio in altezza */
+}
+
+.square {
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  background-color: #FF7700;
+}
+
+.semester-overlay h1 {
+  color: var(--color-primary) !important;
+  font-size: 10rem !important;
+  font-weight: bold;
+  letter-spacing: 0;
+}
+/* Navbar-toggler custom (hamburger) */
+.custom-toggler-icon {
+width: 30px;
+height: 3px;
+background-color: black;
+position: relative;
+display: block;
+margin-top: 12px;
+}
+
+/* Linee aggiuntive per formare l'hamburger */
+.custom-toggler-icon::before,
+.custom-toggler-icon::after {
+content: "";
+position: absolute;
+width: 30px;
+height: 3px;
+background-color: black;
+left: 0;
+}
+
+/* Posizionamento della prima linea sopra */
+.custom-toggler-icon::before {
+top: -8px;
+}
+
+/* Posizionamento della terza linea sotto */
+.custom-toggler-icon::after {
+top: 8px;
+}
+
+
+
+
+
+}
+
+
+
+
+
+/* Contenitore principale per toggle */
+/* Stile per il contenitore del toggle */
+.icon-toggle {
+  display: flex;
+  align-items: center; /* Centra verticalmente */
+  gap: 10px; /* Spaziatura tra l'icona e il testo */
+  cursor: pointer;
+  height: 100%;
+  padding-left: 0;
+}
+
+/* Stile per l'icona */
+.icon-container {
+  width: 50px; /* Larghezza fissa */
+  height: 50px; /* Quadrato */
+  background-color: rgba(0, 0, 0, 0.69); /* Colore predefinito */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: background-color 0.3s ease; /* Animazione per il cambio di colore */
+}
+
+/* Stile per l'icona quando attiva */
+.icon-toggle.active .icon-container {
+  background-color: black; /* Colore dello sfondo quando attivo */
+}
+
+/* Stile per il testo */
+#interactionText {
+  font-size: 14px;
+  font-weight: bold;
+  color: ; /* Colore predefinito */
+  white-space: normal;
+  line-height: 1.2;
+}
+
+/* Stile per il testo quando attivo */
+.icon-toggle.active #interactionText {
+  color: black; /* Colore del testo quando attivo */
+}
+
+
+#hoverOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(180, 180, 180, 0.576);
+  color: white;
+  font-size: 1.5rem;
+  z-index: 9999;
+}
+
+#hoverOverlay.hidden {
+  display: none;
+}
+
+#fileName {
+color: #070300;
+text-align: center;
+font-family: "KF Zuka";
+font-size: 180px;
+font-style: normal;
+font-weight: 700;
+line-height: 122.945%; /* 221.3px */
+letter-spacing: -9px;
+}
+
+.dropdown-menu {
+  border-radius: 0px !important;
+  font-family: "KF Zuka";
+  font-size: 16px !important;
+  font-weight: bold !important;
+}
+
+
+.dropdown-menu a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #000;
+  font-size: 16px;
+}
+
+.custom-search-bar {
+  border-radius: 0 !important; /* Rimuove i bordi arrotondati */
+  border: 1px solid black !important; /* Bordo nero di 4px */
+  text-align: right !important; /* Allinea il placeholder e il testo a destra */
+  padding-right: 10px !important; /* Aggiunge spazio tra il testo e il bordo */
+  font-size: 16px !important; /* Dimensione del testo */
+  font-family: "KF Zuka";
+  font-size: 16px !important;
+  font-weight: bold !important;
+  background-color: white !important; /* Sfondo bianco (opzionale) */
+}
+
+.custom-search-bar::placeholder {
+  text-align: right !important; /* Allinea il placeholder a destra */
+  color: #666 !important; /* Cambia il colore del placeholder */
+}
+
+.filter-menu {
+  border: 4px solid #000 !important;
+  border-radius: 0 !important;
+}
+
+.filter-menu input {
+  border: 4px solid #000 !important;
+  border-radius: 0 !important;
+  text-align: right !important;
+}
+
+.filter-menu a {
+  border-radius: 0 !important;
+  font-size: 14px !important;
+  padding: 4px 8px !important;
+}
+
+
+/* Overlay */
+#filter-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+#filter-overlay.d-none {
+  display: none !important;
+}
+
+/* Menu */
+.filter-menu {
+  background-color: #fff;
+  width: 300px;
+  padding: 20px;
+  border: 4px solid #000;
+  border-radius: 0;
+  z-index: 10000;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+.filter-menu input {
+  border: 4px solid #000 !important;
+  border-radius: 0 !important;
+  text-align: right !important;
+}
+
+.filter-menu a {
+  border-radius: 0 !important;
+  font-size: 14px !important;
+  padding: 4px 8px !important;
+}
+
+body.no-scroll {
+  overflow: hidden;
+}
+
+
+.custom-btn {
+  background-color: white; 
+  border: 1px solid black; 
+  border-radius: 0; 
+  padding: 5px 10px;
+  margin-left: 0;
+  font-size: 16px !important;
+  font-family: "KF Zuka";
+  font-weight: bold;
+}
+
+.custom-btn:hover {
+  background-color: black; /* Sfondo nero su hover */
+  color: white; /* Testo bianco su hover */
+}
+
+.custom-btn.active {
+  background-color: black !important; /* Sfondo nero per stato attivo */
+  color: white !important; /* Testo bianco per stato attivo */
+}
+
+h2 {
+  color: #000;
+  font-family: "KF Zuka";
+  font-size: 39px !important;
+  font-style: normal;
+  font-weight: 700 !important;
+  line-height: 39px; /* 100% */
+  letter-spacing: -1.17px;
+}
+
+
+.offcanvas-backdrop {
+  opacity: 0 !important;
+}
+
+.text-rs {
+  color: #747474 !important;
+  font-size: 16px !important;
+  cursor: pointer;
+}
+
+.text-reset span {
+  cursor: pointer;
+}
+
+.text-reset:hover {
+  color: #0056b3;
+  text-decoration: none;
+}
+
+
